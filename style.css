@@ -1,0 +1,119 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+html {
+  height:100%;
+}
+
+body{
+  background-color:#ECE5DD;
+  display: flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.top div{
+  display:flex;
+  align-items:center;
+  background-color:#EF878A;
+  padding:10px;
+}
+
+.usericon{
+  width:40px;
+  height:40px;
+  background-color:#ECE5DD;
+  color:#606060;
+  border-radius:50%;
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0px;
+  margin-left:10px;
+  border:1px solid #ECE5DD;
+  padding:3px;
+  font-weight:bold;
+}
+
+.usericon:active{
+  transform: scale(0.9);
+}
+
+.username{
+  margin-left:7px;
+  font-weight:bold;
+  color:#FEFEFE;
+}
+
+.messagesdiv{
+  width:100%;
+  height:100%;
+  overflow:scroll;
+  flex-grow:1;
+}
+
+.bottom{
+  width:100%;
+  background-color:#EF878A;
+  padding:13px 0px 13px 0px;
+  display:flex;
+  justify-content:center;
+}
+
+.inputtext{
+  float:left;
+  width:55%;
+  padding:12px 10px 12px 10px;
+  border:none;
+  border-radius:15px;
+  margin-right:15px;
+  outline:none;
+  background-color:#ECE5DD;
+  color:#606060;
+}
+
+.send{
+  padding:12px 15px 12px 15px;
+  background-color:#ECE5DD;
+  border:none;
+  border-radius:16px;
+  color:#606060;
+}
+
+.send:active{
+  transform: scale(1.1);
+}
+
+.receiver-container{
+  border-radius: 10px 10px 0px 10px;
+  background-color:#EF878A;
+  color: #fff;
+  padding: 10px;
+  max-width: 50vw;
+  float: right;
+  margin: 2px 5px 2px 50vw;
+  font-family: calibri;
+  word-wrap: break-word;
+}
+
+.receiver-container2{
+  border-radius: 10px 10px 10px 0px;
+  background-color:#ECA095;
+  color: #fff;
+  padding: 10px;
+  max-width: 50vw;
+  float: left;
+  margin: 2px 50vw 2px 5px;
+  font-family: calibri;
+  word-wrap: break-word;
+}
+
+.starttext{
+  width:70%;
+  color:#606060;
+  padding:10px 15% 10px 15%;
+  font-size:14px;
+}
