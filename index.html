@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075E54">
+  <title>Zara AI – Chat</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
-    <script src="script.js"></script>
-	
-<!-- Write here -->
-<div class="top">
-  <div>
-    <p class="usericon" >C</p>
-    <p class="username">Codeflash App<br><small><span id="spanonline" >Online</span></small></p>
+  <div class="app">
+    <!-- Header -->
+    <header class="top">
+      <button class="icon-btn back" aria-label="Back">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <div class="usericon" aria-hidden="true">Z</div>
+      <div class="username">
+        <span class="name">Zara AI <svg class="verified" viewBox="0 0 24 24" width="16" height="16"><path fill="#25D366" d="M12 1l2.6 2 3.2-.3 1.2 3 2.9 1.4-.6 3.2L23 12l-1.7 2.7.6 3.2-2.9 1.4-1.2 3-3.2-.3L12 23l-2.6-2-3.2.3-1.2-3-2.9-1.4.6-3.2L1 12l1.7-2.7-.6-3.2 2.9-1.4 1.2-3 3.2.3L12 1z"/><path fill="#fff" d="M10.4 15.6l-3-3 1.1-1.1 1.9 1.9 5-5 1.1 1.1z"/></svg></span>
+        <small id="spanonline">online</small>
+      </div>
+      <div class="actions">
+        <button class="icon-btn" id="clear_btn" title="Clear chat" aria-label="Clear chat">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 8a2 2 0 100-4 2 2 0 000 4zm0 2a2 2 0 100 4 2 2 0 000-4zm0 6a2 2 0 100 4 2 2 0 000-4z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <main id="messagesdivid" class="messagesdiv" aria-live="polite"></main>
+
+    <!-- Quick replies -->
+    <div id="quick_replies" class="quick-replies"></div>
+
+    <!-- Input bar -->
+    <footer class="bottom">
+      <div class="input-wrap">
+        <input type="text" class="inputtext" placeholder="Message" id="message_box" autocomplete="off">
+      </div>
+      <button class="send" id="send_btn" aria-label="Send" onclick="send_text()">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+      </button>
+    </footer>
   </div>
-</div>
 
-<div id="messagesdivid" class="messagesdiv" >
-<p class="starttext" align="center">Hello, my name is Joshua. I am an a chatbot.</p>
-</div>
-
-<div class="bottom" align="center" >
-  <input type="text" class="inputtext" placeholder="Type your message..." id="message_box" >
-  <button class="send" onclick="send_text()">Send</button>
-</div>
-	
-	
+  <script src="script.js"></script>
 </body>
 </html>
-    
